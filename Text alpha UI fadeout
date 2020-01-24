@@ -1,0 +1,15 @@
+//Variables
+public Text text;
+
+
+void Start()
+{     
+  text.GetComponent<Text>(); 
+}
+
+
+void TextFadeout()
+{
+  text.color = new Color(0, 0, 0, 1);  // Setting alpha of the text to full 
+  text.CrossFadeAlpha(0.0f, 9.0f, false);  // fading the alpha out of the text to zero
+}
